@@ -1,0 +1,315 @@
+html {
+    background-color: #ffffff;
+}
+
+body {
+    overflow: hidden;
+}
+
+.header{
+    background-color: #0b0c10;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+#sidebar {
+    height: 100%;
+    width: 15%;
+    background-color: #7D90FF;
+
+}
+
+.barBtn{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-color: transparent;
+    border: transparent;
+    margin-left: 20%;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none !important;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.barBtn.active {
+    background-color: #ffffff;
+    color:  #ffffff
+}
+
+.dragable {
+    -webkit-app-region: drag;
+}
+
+.modal {
+    display: none;
+}
+
+.hr {
+    color: black;
+}
+
+.title {
+    color: #ffffff;
+    border-bottom: 5px solid #7D90FF;
+    margin-right: 10%;
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
+
+.secondary-title {
+    color: #ffffff;
+    border-bottom: 5px solid #7D90FF;
+    margin-right: 10%;
+    font-size: 25px;
+    font-family: 'Montserrat';
+}
+
+section {
+    background-color: #0b0c10;
+    height: 700px;
+}
+
+.close{
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: transparent;
+    position: relative;
+}
+
+.update{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: transparent;
+    margin-left: 20%;
+}
+
+.btn-inline{
+    display:inline-block;
+}
+
+.closeButton{
+    background-color: transparent;
+    border: transparent;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    outline: none !important;
+}
+
+.cardContainer {
+    overflow-x: auto;
+    background: none;
+    border: solid #7D90FF;
+    border-width: 2px;
+    border-radius: 5px;
+    height: 475px;
+    width: 625px;
+}
+
+.controlContainer {
+    background: none;
+    border: solid #7D90FF;
+    border-width: 2px;
+    border-radius: 5px;
+    height: 475px;
+    width: 250px;
+    margin-left: 15px;
+}
+
+.labels{
+    position: relative;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.taskButton {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: transparent;
+    margin-left: 1%;
+}
+
+.center-div {
+    justify-content: center;
+    align-items: center;
+}
+
+.center-div input {
+    padding: 1rem;
+    margin: 10px 0px;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #7D90FF;
+    font-size: 1.5rem;
+    background: transparent;
+    outline: none;
+}
+
+.main-button {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    background: #7D90FF;
+    border-style: hidden;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 5px;
+    width: 30%;
+}
+
+.secondary-button {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    background: #7D90FF;
+    border-style: hidden;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 15px;
+    width: 95%;
+}
+
+.current-key {
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat';
+}
+
+.creationLabel {
+    color: white;
+    border-bottom: 1px solid #7D90FF;
+}
+
+.typeSelect {
+    display: block;
+    background: none;
+    border: solid #7D90FF;
+    border-width: 2px;
+    border-radius: 5px;
+    color:white;
+    outline: none !important;
+}
+
+option {
+    background: #0b0c10;
+    border: solid #7D90FF;
+    border-width: 2px;
+    border-radius: 5px;
+    outline: none !important;
+}
+
+.settings-input {
+    width: 30%;
+    padding: .5rem;
+    margin: 10px 0px;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #7D90FF;
+    font-size: 1.5rem;
+    background: transparent;
+    outline: none;
+}
+
+.controls-input {
+    width: 95%;
+    padding: .5rem;
+    margin: 10px 0px;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #7D90FF;
+    font-size: 1.5rem;
+    background: transparent;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+th {
+    color: #ffffff;
+    border-bottom: 3px solid #7D90FF;
+    font-family: 'Montserrat';
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+  
+table tr {
+    padding: .7em;
+}
+  
+table td {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}  
+
+/* Modal */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */ 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+/* Modal Content */
+.modal-content {
+    background-color: #0b0c10;
+    margin: auto;
+    border: none;
+    width: 20rem;
+    color: #ffffff;
+    box-shadow: 0 3px 15px 0 #303030;
+    transition: 0.3s;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+small {
+    color: #ffffff;
+    margin-left: 100px;
+}

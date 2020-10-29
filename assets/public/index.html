@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="id=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Privacy Gen</title>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1 px-1 position-fixed" id="sidebar">
+                <img class="logo dragable" src="../imgs/logo.svg">
+                <hr/>
+                <nav class="nav flex-column">
+                    <button class="barBtn" id="mainBtn">
+                        <img class="barBtn" src="../imgs/home.png"/>
+                    </button>
+                    <button class="barBtn" id="transactionsBtn">
+                        <img class="barBtn" src="../imgs/transactions.png" />
+                    </button>
+                    <button class="barBtn" id="settingsBtn">
+                        <img class="barBtn" src="../imgs/settings.png" />
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Header Controls -->
+    <div class="header">
+        <button class="closeButton btn-inline" id="minimizeBtn" style="margin-left: 93%; padding-top: 1px; " >
+            ➖
+        </button>
+        <button class="closeButton btn-inline" id="closeBtn" style="margin-left: 1%">❌</button>
+    </div>
+    <!-- Content -->
+    <div>
+        <!-- -->
+        <section class="col offset-1" id="main">
+            <b class="title">Privacy Gen</b>
+            <div class="labels">
+                <b>💳 Cards</b>
+            </div>
+            <div class="container cardContainer" id="cardContainer" style="float: left;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Memo</th>
+                            <th>Last 4</th>
+                            <th>Limit</th>
+                            <th>Status</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+        
+                    </tbody>
+                </table>
+            </div>
+            <div class="container controlContainer" id="controls" style="float: left">
+                <b class="secondary-title">Card Creation</b>
+                <input class="controls-input" type="text" placeholder="Memo" id="memo-input">
+                <input class="controls-input" type="number" placeholder="Limit" id="limit-input">
+                <label class="creationLabel" for="use-type"><b>Type</b></label>
+                <select class="typeSelect" id="use-type">
+                    <option>SINGLE_USE</option>
+                    <option>MERCHANT_LOCKED</option>
+                </select>
+                <label class="creationLabel" for="duration"><b>Duration</b></label>
+                <select class="typeSelect" id="duration">
+                    <option>TRANSACTION</option>
+                    <option>MONTHLY</option>
+                    <option>ANNUALLY</option>
+                    <option>FOREVER</option>
+                </select>
+                <button class="secondary-button" id="create-button">Create Card</button>
+            </div>
+        </section>
+        <!-- Transactions -->
+        <section class="col offset-1" id="transactions">
+            <b class="title">Transactions</b>
+            <div class="labels">🔮</div>
+            <div class="container cardContainer" id="transactionContainer" style="float: left;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Card</th>
+                            <th>Amount</th>
+                            <th>Merchant</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transactionsBody">
+        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- Settings -->
+        <section class="col offset-1" id="settings">
+            <b class="title">Account Details</b>
+            <div class="center-div">
+                <h4 class="current-key">Current Key: <b id="key-content" style="color: #7D90FF"></b></h4>
+                <input class="settings-input" type="text" placeholder="API Key" id="api-input">
+                <br>
+                <button class="main-button" id="api-button">Save Key</button>
+                <br>
+                <h4 class="current-key">Current Account: <b id="account-content" style="color: #7D90FF"></b></h4>
+                <input class="settings-input" type="text" placeholder="Email" id="email-input">
+                <br>
+                <input class="settings-input" type="password" placeholder="Password" id="password-input">
+                <br>
+                <button class="main-button" id="account-button">Save Login</button>
+                <br>
+                <small id="message">Wait for popup! ✋</small>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                      <p><h5><b class="title">Enter Code 👇</b></h5></p>
+                      <br>
+                      <input class="settings-input" type="text" placeholder="Code" id="code-input">
+                      <br>
+                      <button class="main-button" id="code-button">Submit</button>
+                      <br>
+                      <small>Check email for verification code! 📨</small>          
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../../assets/public/listener.js"></script>
+    <script src="../../assets/public/sender.js"></script>
+</body>
+</html>
